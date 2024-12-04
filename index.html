@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техника на говора</title>
+    <style>
+        #image {
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="voice.avif" alt="Click me!" width="200">
+    <div id="result">Кликни върху изображението и избери комбинация по техника на говора!</div>
+    <script>
+        document.getElementById('image').addEventListener('click', function(){
+
+        let randomNumber = Math.floor(Math.random() * 17);
+        let combination = "";
+    if(randomNumber == 0){
+        combination = `Комбинация 0: опитай с другото пръстче`;
+    }
+    if(randomNumber == 1){
+        combination = `Комбинация 1: силен, висок, бърз, плътен `;
+    }
+    if(randomNumber == 2){
+        combination = `Комбинация 2: силен, нисък, бавен, въздушен`;
+    }
+    if(randomNumber == 3){
+        combination = `Комбинация 3: тих, нисък, бърз, въздушен`;
+    }
+    if(randomNumber == 4){
+        combination = `Комбинация 4: тих, нисък, бавен, плътен`;
+    }
+    if(randomNumber == 5){
+        combination = `Комбинация 5: тих, висок, бавен, въздушен`;
+    }
+    if(randomNumber == 6){
+        combination = `Комбинация 6: тих, нисък, бавен, въздушен`;
+    }
+    if(randomNumber == 7){
+        combination = `Комбинация 7: тих, висок, бърз, плътен`;
+    }
+    if(randomNumber == 8){
+        combination = `Комбинация 8: силен, нисък, бърз, плътен`;
+    }
+    if(randomNumber == 9){
+        combination = `Комбинация 9: силен, висок, бавен, плътен`;
+    }
+    if(randomNumber == 10){
+        combination = `Комбинация 10: силен, висок, бърз, въздушен`;
+    }
+    if(randomNumber == 11){
+        combination = `Комбинация 11: силен, висок, бавен, въздушен`;
+    }
+    if(randomNumber == 12){
+        combination = `Комбинация 12: силен, нисък, бавен, плътен `;
+    }
+    if(randomNumber == 13){
+        combination = `Комбинация 13: силен, нисък, бърз, въздушен`;
+    }
+    if(randomNumber == 14){
+        combination = `Комбинация 14: тих, нисък, бърз, плътен`;
+    }
+    if(randomNumber == 15){
+        combination = `Комбинация 15: тих, висок, бърз, въздушен`;
+    }
+    if(randomNumber == 16){
+        combination = `Комбинация 16: тих, висок, бавен, плътен`;
+    }   
+    
+    document.getElementById('result').innerText = `${combination}`
+  
+   });
+ 
+    </script>
+</body>
+</html>
